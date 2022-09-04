@@ -49,7 +49,7 @@ date.innerHTML = today;
 function enterName() {
   console.log("yes");
   let text;
-  let person = prompt("Please enter your name:", "name");
+  let person = prompt("Please enter your name:", "");
   if (person == null || person == "") {
     text = "Cleared to enter the campus";
   } else {
