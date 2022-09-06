@@ -51,9 +51,22 @@ function enterName() {
   if (person == null || person == "") {
     text = "Cleared to enter the campus";
   } else {
+    document.cookie = `${person}; SameSite=None; Secure`;
     text = `${person} <br> Cleared to enter the campus`;
   }
   document.getElementById("name").innerHTML = text;
+}
+
+// if (nameCookie != ""){
+//   console.log("string")
+// } else{
+
+let nameCookie = document.cookie;
+if (nameCookie != ""){
+  document.getElementById("name").innerHTML = nameCookie;
+}
+else{
+  enterName();
 }
 
 // if (nameCookie != ""){
