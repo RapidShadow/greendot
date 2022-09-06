@@ -4,7 +4,7 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 if (mm == "01") {
-today = `January ${dd}, ${yyyy}`;
+  today = `January ${dd}, ${yyyy}`;
 }
 else if (mm == "02") {
   today = `February ${dd}, ${yyyy}`;
@@ -57,15 +57,13 @@ function enterName() {
   document.getElementById("name").innerHTML = text;
 }
 
-// if (nameCookie != ""){
-//   console.log("string")
-// } else{
+
 
 let nameCookie = document.cookie;
 if (nameCookie == ""){
   enterName();
-}
-else{
+} else {
   document.getElementById("name").innerHTML = `${nameCookie} <br> Cleared to enter the campus`;
 }
+
 
