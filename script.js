@@ -63,16 +63,9 @@ function enterName() {
 
 let nameCookie = document.cookie;
 if (nameCookie != ""){
-  document.getElementById("name").innerHTML = nameCookie;
-}
-else{
   enterName();
 }
-
-// if (nameCookie != ""){
-//   console.log("string")
-// } else{
-enterName();
-document.cookie = "name=oeschger; SameSite=None; Secure";
-let nameCookie = document.cookie;
-console.log(nameCookie)
+else{
+  document.getElementById("name").innerHTML = nameCookie;
+}
+console.log(nameCookie);
