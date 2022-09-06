@@ -51,7 +51,7 @@ function enterName() {
   if (person == null || person == "") {
     text = "Cleared to enter the campus";
   } else {
-    document.cookie = `${person}; SameSite=None; Secure; expires=expires=Sat, 05 Aug 2023 23:00:00 UTC; path=/";`;
+    document.cookie = `${person}; SameSite=None; Secure; expires=Sat, 05 Aug 2023 23:00:00 UTC; path=/";`;
     text = `${person} <br> Cleared to enter the campus`;
   }
   document.getElementById("name").innerHTML = text;
