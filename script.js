@@ -1,4 +1,3 @@
-
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -47,7 +46,6 @@ let date = document.getElementById("date");
 date.innerHTML = today;
 
 function enterName() {
-  console.log("yes");
   let text;
   let person = prompt("Please enter your name:", "");
   if (person == null || person == "") {
@@ -57,4 +55,11 @@ function enterName() {
   }
   document.getElementById("name").innerHTML = text;
 }
+
+// if (nameCookie != ""){
+//   console.log("string")
+// } else{
 enterName();
+document.cookie = "name=oeschger; SameSite=None; Secure";
+let nameCookie = document.cookie;
+console.log(nameCookie)
