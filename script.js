@@ -66,6 +66,6 @@ if (nameCookie == ""){
   enterName();
 }
 else{
-  document.getElementById("name").innerHTML = nameCookie;
+  document.getElementById("name").innerHTML = ${nameCookie} <br> Cleared to enter the campus`;
 }
-console.log(nameCookie);
+
