@@ -62,7 +62,7 @@ function enterName() {
 // } else{
 
 let nameCookie = document.cookie;
-if (nameCookie != ""){
+if (nameCookie == ""){
   enterName();
 }
 else{
